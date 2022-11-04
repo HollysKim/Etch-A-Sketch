@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(16, 16fr);
+    grid-gap: 5px;
+}
+
+.container div {
+    border: 1px solid black;
+    text-align: center;
+    padding: 20px;
+}
+
+.gridDiv {
+    background-color: black;
+    cursor: pointer;
+}
+
+.container div:hover {
+    background-color: red;
+}
+
+.container div:after {
+    background-color: rgb(55, 44, 44);
+}
