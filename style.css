@@ -1,28 +1,23 @@
 * {
     box-sizing: border-box;
+    text-align: center;
 }
+
+
 
 .container {
     display: grid;
-    grid-template-columns: repeat(16, 16fr);
-    grid-gap: 5px;
-}
-
-.container div {
-    border: 1px solid black;
-    text-align: center;
-    padding: 20px;
+    justify-content: center;
+    
+    width: 700px;
+    height: 700px; 
+    border: 5px black solid;
 }
 
 .gridDiv {
-    background-color: black;
-    cursor: pointer;
+    
 }
 
-.container div:hover {
+.gridDivColorOn {
     background-color: red;
-}
-
-.container div:after {
-    background-color: rgb(55, 44, 44);
 }
