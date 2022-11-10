@@ -60,12 +60,13 @@ function mouseUp(gridElements) {
 
     gridBtn.addEventListener('click', () => {
         let gridSize = prompt('Input a grid size up to 100:');
-        if(gridSize > 100) {
-            alert('Inputs over 100 are not accepted.');
-        }
-        //page.style.gridTemplateColumns = 'repeat(1, 1fr)';
-        deleteGrid();
+        if(gridSize < 101) {
+            deleteGrid();
         createGrid(gridSize);
+        }
+        else {
+            alert('Invalid input. Inputs must be numerical and must not exceed 100.');
+        }
     });
 
 function eraseColor(gridElements) {
@@ -75,6 +76,3 @@ function eraseColor(gridElements) {
         })
     })
 }
-
-
-
